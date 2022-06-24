@@ -25,74 +25,122 @@
         <div class="box">
           <div class="dateTime">
             <div class="date">00/00/00</div>
-            <div class="timer">00:00:00</div>
+            <div class="time">00:00:00</div>
           </div>
 
           <h2>BODY MASS INDEX</h2>
 
           <form action="#" class="form">
             <p>
-              <div class="genders">
-                <label>Gender :</label>
-                <label>
-                  <input type="radio" name="gender" value="male" class="gender" />
+              <label
+                >Gender :
+                <label class="genders">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    class="gender"
+                  />
                   Male
                 </label>
-  
-                <label>
-                  <input type="radio" name="gender" value="female" class="gender" />
+
+                <label class="genders">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    class="gender"
+                  />
                   female
                 </label>
-              </div>
-              
-              <div class="age">
-                <label>
-                  Age:
-                  <input type="text" class="minInput" maxlength="3">
-                </label>
-              </div>
-            </p>
-            <p>
-              <label>Full Name<span>*</span><br>
-                <input type="text" placeholder="Rane Njims" name="userName" class="userName maxInput">
+              </label>
+
+              <label>
+                Age
+                <input type="text" class="minInput" maxlength="3" />
               </label>
             </p>
             <p>
-              <label>Email <br>
-                <input type="mail" placeholder="Rane@mail.com" name="userMail" class="userMail maxInput">
+              <label
+                >Full Name <span>*</span><br />
+                <input
+                  type="text"
+                  placeholder="Rane Njims"
+                  name="userName"
+                  class="userName maxInput"
+                />
+              </label>
+              <small class="error1"></small>
+            </p>
+            <p>
+              <label
+                >Email <br />
+                <input
+                  type="mail"
+                  placeholder="Rane@mail.com"
+                  name="userMail"
+                  class="userMail maxInput"
+                />
               </label>
             </p>
             <p>
-              <label>Telephone <br>
-                <input type="tel" placeholder="Phone number" name="userPhone" class="userPhone maxInput" maxlength="10">
+              <label
+                >Telephone <br />
+                <input
+                  type="tel"
+                  placeholder="898983339"
+                  name="userPhone"
+                  class="userPhone maxInput"
+                  maxlength="10"
+                />
               </label>
             </p>
             <p>
-              <label>Address <br>
-                <input type="text" placeholder="Cameroon-yaounde" name="userAddress" class="userAddress maxInput">
+              <label
+                >Address <br />
+                <input
+                  type="text"
+                  placeholder="Cameroon-yaounde"
+                  name="userAddress"
+                  class="userAddress maxInput"
+                />
               </label>
             </p>
             <p>
               <label>
-                Height:
-                <input type="text" maxlength="4" class="minInput userHeight">
+                Height <span>*</span>
+                <input
+                  type="text"
+                  maxlength="4"
+                  class="minInput userHeight"
+                /><br />
+                <small class="error2"></small>
               </label>
+
               <label>
-                Weight:
-                <input type="text" maxlength="4" class="minInput userWeight">
+                Weight <span>*</span>
+                <input
+                  type="text"
+                  maxlength="4"
+                  class="minInput userWeight"
+                /><br />
+                <small class="error3"></small>
               </label>
             </p>
             <p class="result">BMI:</p>
-            <p class="btns">
-              <button type="submit" class="submitButton">Submit</button>
-            
-              <button type="reset" class="resetButton">Reset</button>
-            </p>
           </form>
+          <p class="btns">
+            <button type="submit" class="submitButton">Submit</button>
+
+            <button type="reset" class="resetButton">Reset</button>
+          </p>
         </div>
       </main>
     </div>
 
     <script src="/App/JS/main.js"></script>
+    <script src="/App/JS/error.js"></script>
+    <script src="/App/JS/date.js"></script>
+    <script src="/App/JS/time.js"></script>
   </body>
 </html>

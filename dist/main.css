@@ -94,13 +94,15 @@ body {
   }
 }
 .box {
-  border: 1px solid red;
+  border: 2px solid #282828;
   width: 100%;
   max-width: 35em;
-  margin: 5% auto;
+  margin: 2% auto;
   padding: 1em 2em;
   color: #282828;
   font-family: sans-serif, Verdana, Geneva, Tahoma;
+  border-radius: 5px;
+  transition: 1s;
 }
 .box .dateTime {
   display: flex;
@@ -114,26 +116,65 @@ body {
 .box .form p {
   margin-block: 1em;
 }
+.box .form p small {
+  color: red;
+  font-size: 1.3rem;
+  font-style: italic;
+  transition: 0.5s;
+}
 .box .form label {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .box .form input:not(.gender) {
   height: 2em;
-  background-color: #282828;
+  background-color: #555;
+  caret-color: #fff;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  transition: 0.5s;
 }
 .box .form .minInput {
-  width: 4em;
+  width: 3em;
+  text-align: center;
 }
 .box .form .maxInput {
   width: 100%;
+  padding-inline: 0.5em;
+  margin-top: 0.5em;
 }
-.box .form .genders {
-  display: inline;
-  border: 1px solid green;
+.box .form span {
+  color: red;
 }
 .box .form p:nth-of-type(1),
-.box .form p:nth-of-type(7) {
+.box .form p:nth-of-type(6) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.box .form .genders {
+  font-size: 1.3rem;
+  margin-left: 0.4em;
+  font-weight: normal;
+}
+.box .form .gender {
+  cursor: pointer;
+  accent-color: #002425;
+}
+.box .form .result {
+  margin-block: 2em;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.box .btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.box .btns button {
+  background-color: #002425;
+  color: #fff;
+  padding: 0.5em 2em;
+  font-weight: bolder;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

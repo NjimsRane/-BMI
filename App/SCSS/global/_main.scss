@@ -1,13 +1,17 @@
 .box {
-  border: 1px solid red;
+  border: 2px solid #282828;
   width: 100%;
   max-width: 35em;
-  margin: 5% auto;
+  margin: 2% auto;
 
   padding: 1em 2em;
   color: #282828;
 
   font-family: sans-serif, Verdana, Geneva, Tahoma;
+
+  border-radius: 5px;
+
+  transition: 1s;
 
   .dateTime {
     display: flex;
@@ -23,32 +27,77 @@
   .form {
     p {
       margin-block: 1em;
+
+      small {
+        color: red;
+        font-size: 1.3rem;
+        font-style: italic;
+
+        transition: 0.5s;
+      }
     }
 
     label {
       font-size: 1.5rem;
+      font-weight: 600;
     }
     input:not(.gender) {
       height: 2em;
-      background-color: #282828;
+      background-color: #555;
+      caret-color: #fff;
+      color: #fff;
+
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1.5rem;
+      transition: 0.5s;
     }
 
     .minInput {
-      width: 4em;
+      width: 3em;
+      text-align: center;
     }
     .maxInput {
       width: 100%;
+      padding-inline: 0.5em;
+      margin-top: 0.5em;
     }
-    .genders {
-      display: inline;
-      border: 1px solid green;
+    span {
+      color: red;
     }
 
     p:nth-of-type(1),
-    p:nth-of-type(7) {
+    p:nth-of-type(6) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .genders {
+      font-size: 1.3rem;
+      margin-left: 0.4em;
+      font-weight: normal;
+    }
+    .gender {
+      cursor: pointer;
+      accent-color: #002425;
+    }
+
+    .result {
+      margin-block: 2em;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+  }
+  .btns {
+    display: flex;
+    justify-content: space-evenly;
+    button {
+      background-color: #002425;
+      color: #fff;
+
+      padding: 0.5em 2em;
+      font-weight: bolder;
+
+      cursor: pointer;
     }
   }
 }

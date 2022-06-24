@@ -6,6 +6,8 @@ const darkButton = document.querySelector(".darkButton");
 const lightButton = document.querySelector(".lightButton");
 
 const logo = document.querySelector("#logo");
+const box = document.querySelector(".box");
+
 
 
 /* creating all the events needed*/ 
@@ -22,6 +24,9 @@ function moveToRight(){
   toggleBox.style.border = "1px solid #fff";
   container.style.backgroundColor = "#282828";
   logo.style.color = "#fff";
+
+  box.style.color = "#fff";
+  box.style.border = "2px solid #fff"
 }
 
 function moveToLeft(){
@@ -31,4 +36,7 @@ function moveToLeft(){
   toggleBox.style.border = "1px solid #282828";
   container.style.backgroundColor = "#fff";
   logo.style.color = "#282828";
+
+  box.style.color = "#282828";
+  box.style.border = "2px solid #282828" 
 }

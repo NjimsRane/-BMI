@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Njimoke Rane Soulemanou" />
+    <meta name="description" content="Calculate your body mass index" />
+    <title>BODY MASS INDEX</title>
+    <!-- links -->
+    <link rel="stylesheet" href="/dist/main.css" />
+    <link rel="icon" href="/Images/images.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="mainHeader">
+        <a href="/App/HTML/index.html" id="logo">njimoke</a>
+        <div class="toggleBox">
+          <div class="toggle"></div>
+          <button class="toggleButton darkButton"></button>
+          <button class="toggleButton lightButton"></button>
+        </div>
+      </header>
+      <main>
+        <div class="box">
+          <div class="dateTime">
+            <div class="date">00/00/00</div>
+            <div class="timer">00:00:00</div>
+          </div>
+
+          <h2>BODY MASS INDEX</h2>
+
+          <form action="#" class="form">
+            <p>
+              <div class="genders">
+                <label>Gender :</label>
+                <label>
+                  <input type="radio" name="gender" value="male" class="gender" />
+                  Male
+                </label>
+  
+                <label>
+                  <input type="radio" name="gender" value="female" class="gender" />
+                  female
+                </label>
+              </div>
+              
+              <div class="age">
+                <label>
+                  Age:
+                  <input type="text" class="minInput" maxlength="3">
+                </label>
+              </div>
+            </p>
+            <p>
+              <label>Full Name<span>*</span><br>
+                <input type="text" placeholder="Rane Njims" name="userName" class="userName maxInput">
+              </label>
+            </p>
+            <p>
+              <label>Email <br>
+                <input type="mail" placeholder="Rane@mail.com" name="userMail" class="userMail maxInput">
+              </label>
+            </p>
+            <p>
+              <label>Telephone <br>
+                <input type="tel" placeholder="Phone number" name="userPhone" class="userPhone maxInput" maxlength="10">
+              </label>
+            </p>
+            <p>
+              <label>Address <br>
+                <input type="text" placeholder="Cameroon-yaounde" name="userAddress" class="userAddress maxInput">
+              </label>
+            </p>
+            <p>
+              <label>
+                Height:
+                <input type="text" maxlength="4" class="minInput userHeight">
+              </label>
+              <label>
+                Weight:
+                <input type="text" maxlength="4" class="minInput userWeight">
+              </label>
+            </p>
+            <p class="result">BMI:</p>
+            <p class="btns">
+              <button type="submit" class="submitButton">Submit</button>
+            
+              <button type="reset" class="resetButton">Reset</button>
+            </p>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="/App/JS/main.js"></script>
+  </body>
+</html>

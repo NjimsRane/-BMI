@@ -1,0 +1,54 @@
+.box {
+  border: 1px solid red;
+  width: 100%;
+  max-width: 35em;
+  margin: 5% auto;
+
+  padding: 1em 2em;
+  color: #282828;
+
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+
+  .dateTime {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    text-align: center;
+    margin-block: 1em;
+    font-size: x-large;
+  }
+
+  .form {
+    p {
+      margin-block: 1em;
+    }
+
+    label {
+      font-size: 1.5rem;
+    }
+    input:not(.gender) {
+      height: 2em;
+      background-color: #282828;
+    }
+
+    .minInput {
+      width: 4em;
+    }
+    .maxInput {
+      width: 100%;
+    }
+    .genders {
+      display: inline;
+      border: 1px solid green;
+    }
+
+    p:nth-of-type(1),
+    p:nth-of-type(7) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-//variable declarations and assignment
+//====================variable declarations and assignment=======================
 
 const container = document.querySelector(".container");
 
@@ -12,14 +12,15 @@ const box = document.querySelector(".box");
 
 
 
-/* creating all the events needed*/ 
+/*==================creating all the events needed================================*/ 
 darkButton.addEventListener("click",moveToRight);
 lightButton.addEventListener("click",moveToLeft);
 
 
-/* functions to give life to event when they are needed */
+/*======= functions to give life to event when they are needed ========*/
 
-/* action to move the toggle to right and change the background darker */
+/* ==========================action to move the toggle to right and change the background darker============================= */
+
 function moveToRight(){
   toggle.style.left = "60%";
   toggle.style.backgroundColor = "#fff";
@@ -30,10 +31,13 @@ function moveToRight(){
   logo.style.color = "#fff";
 
   box.style.color = "#fff";
-  box.style.border = "2px solid #fff"
+  box.style.border = "2px solid #fff";
+  
+  results.style.color = "teal"
 }
 
-/* action to move the toggle to left and change the background lighter */
+/*=================================== action to move the toggle to left and change the background lighter ===================================*/
+
 function moveToLeft(){
   toggle.style.left = "5%";
   toggle.style.backgroundColor = "#282828";
@@ -44,5 +48,7 @@ function moveToLeft(){
   logo.style.color = "#282828";
 
   box.style.color = "#282828";
-  box.style.border = "2px solid #282828" 
+  box.style.border = "2px solid #282828" ;
+  
+  results.style.color = "#8d0606";
 }

@@ -5,12 +5,16 @@ const error3 = document.querySelector(".error3");
 const submitButton = document.querySelector(".submitButton");
 
 const userName = document.querySelector(".userName");
-// const userWeight = document.querySelector(".userWeight");
-// const userHeight = document.querySelector(".userHeight");
+
+
+
+
 
 
 submitButton.addEventListener("click",()=>{
-  /* full name error handler : if the full name is empty , an  message will come down to remind to fill the input */
+
+  /*================================ full name error handler : if the full name is empty , an  message will come down to remind to fill the input=============================== */
+
   if (userName.value === ""){
     error1.innerText = "Please enter the full name";
     userName.style.border = "1px solid red";
@@ -22,7 +26,9 @@ submitButton.addEventListener("click",()=>{
     userName.style.border = "none";
   }
   
-/* height error handler : if the full name is empty , an  message will come down to remind to fill the input */
+/*======================= height error handler : if the full name is empty , an  message will come down to remind to fill the input=========================== */
+
+/* i have already declared and assigned heigth and weigth varibles when calculating the BMI*/ 
 
   if (H.value === ""){
     error2.innerText = "Please enter the height";
@@ -35,7 +41,7 @@ submitButton.addEventListener("click",()=>{
   
   }
 
-/* weight error handler : if the full name is empty , an  message will come down to remind to fill the input */
+/*========================== weight error handler : if the full name is empty , an  message will come down to remind to fill the input=========================== */
 
   if(W.value === ""){
     error3.innerText = "Please enter the weight";

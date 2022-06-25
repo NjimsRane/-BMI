@@ -103,18 +103,21 @@ body {
   font-family: sans-serif, Verdana, Geneva, Tahoma;
   border-radius: 5px;
   transition: 1s;
+  /* heading*/
+  /*================= form =============================*/
+  /* ==== buttons for the submit and the reset*/
 }
 .box .dateTime {
   display: flex;
   justify-content: space-between;
 }
-.box h2 {
+.box .heading {
   text-align: center;
   margin-block: 1em;
   font-size: x-large;
 }
 .box .form p {
-  margin-block: 1em;
+  margin-block: 1.1em;
 }
 .box .form p small {
   color: red;
@@ -125,13 +128,14 @@ body {
 .box .form label {
   font-size: 1.5rem;
   font-weight: 600;
+  letter-spacing: 1.5px;
 }
 .box .form input:not(.gender) {
   height: 2em;
-  background-color: #555;
+  background-color: #444;
   caret-color: #fff;
   color: #fff;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   transition: 0.5s;
 }
@@ -154,7 +158,7 @@ body {
   align-items: center;
 }
 .box .form .genders {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 0.4em;
   font-weight: normal;
 }
@@ -164,9 +168,11 @@ body {
 }
 .box .form .result {
   margin-block: 2em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: #8d0606;
+  letter-spacing: 1.5px;
+  text-align: justify;
 }
 .box .btns {
   display: flex;
@@ -175,7 +181,7 @@ body {
 .box .btns button {
   background-color: #002425;
   color: #fff;
-  padding: 0.5em 2em;
   font-weight: bolder;
+  padding: 0.5em 2em;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

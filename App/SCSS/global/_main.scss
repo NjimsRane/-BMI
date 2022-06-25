@@ -1,10 +1,12 @@
 .box {
   border: 2px solid #282828;
+
   width: 100%;
   max-width: 35em;
-  margin: 2% auto;
 
+  margin: 2% auto;
   padding: 1em 2em;
+
   color: #282828;
 
   font-family: sans-serif, Verdana, Geneva, Tahoma;
@@ -17,19 +19,22 @@
     display: flex;
     justify-content: space-between;
   }
-
-  h2 {
+  /* heading*/
+  .heading {
     text-align: center;
+
     margin-block: 1em;
     font-size: x-large;
   }
+  /*================= form =============================*/
 
   .form {
     p {
-      margin-block: 1em;
+      margin-block: 1.1em;
 
       small {
         color: red;
+
         font-size: 1.3rem;
         font-style: italic;
 
@@ -40,15 +45,18 @@
     label {
       font-size: 1.5rem;
       font-weight: 600;
+      letter-spacing: 1.5px;
     }
+
     input:not(.gender) {
       height: 2em;
-      background-color: #555;
+      background-color: #444;
       caret-color: #fff;
       color: #fff;
 
-      font-family: "Courier New", Courier, monospace;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 1.5rem;
+
       transition: 0.5s;
     }
 
@@ -56,11 +64,13 @@
       width: 3em;
       text-align: center;
     }
+
     .maxInput {
       width: 100%;
       padding-inline: 0.5em;
       margin-top: 0.5em;
     }
+
     span {
       color: red;
     }
@@ -71,11 +81,14 @@
       justify-content: space-between;
       align-items: center;
     }
+
     .genders {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-left: 0.4em;
+
       font-weight: normal;
     }
+
     .gender {
       cursor: pointer;
       accent-color: #002425;
@@ -83,20 +96,28 @@
 
     .result {
       margin-block: 2em;
-      font-size: 1.4rem;
+
+      font-size: 1.2rem;
       font-weight: 800;
+
       color: #8d0606;
+
+      letter-spacing: 1.5px;
+      text-align: justify;
     }
   }
+
+  /* ==== buttons for the submit and the reset*/
   .btns {
     display: flex;
     justify-content: space-evenly;
+
     button {
       background-color: #002425;
       color: #fff;
+      font-weight: bolder;
 
       padding: 0.5em 2em;
-      font-weight: bolder;
 
       cursor: pointer;
     }

@@ -7,13 +7,13 @@
     <meta name="author" content="Njimoke Rane Soulemanou" />
     <meta name="description" content="Calculate your body mass index" />
     <title>BODY MASS INDEX</title>
-    <!-- links -->
+    <!--=========== links ==========-->
     <link rel="stylesheet" href="/dist/main.css" />
     <link rel="icon" href="/Images/images.jpeg" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
-      <!-- header for the logo and the light button -->
+      <!--=========== header for the logo and the light button =========-->
       <header class="mainHeader">
         <a href="/App/HTML/index.html" id="logo">njimoke</a>
         <div class="toggleBox">
@@ -23,24 +23,24 @@
         </div>
       </header>
 
-      <!-- mains section for the form -->
+      <!-- ============mains section for the form=========== -->
       <main>
         <div class="box">
-          <!-- time and date section -->
+          <!--========== time and date section ===========-->
           <div class="dateTime">
             <div class="date">00/00/00</div>
             <div class="time">00:00:00</div>
           </div>
 
-          <!-- tittle section -->
+          <!-- ========tittle section========-->
 
-          <h2>BODY MASS INDEX</h2>
+          <h2 class="heading">BODY MASS INDEX</h2>
 
-          <!-- form section -->
+          <!-- =========form section======== -->
           <form action="#" class="form">
             <p>
               <label
-                >Gender :
+                >Gender
                 <label class="genders">
                   <input
                     type="radio"
@@ -58,14 +58,14 @@
                     value="female"
                     class="gender"
                   />
-                  female
+                  Female
                 </label>
               </label>
 
               <label>
                 Age
-                <input type="text" class="minInput" maxlength="3" />
-              </label>
+                <input type="text" class="minInput age" maxlength="3" /> </label
+              ><br />
             </p>
             <p>
               <label
@@ -139,7 +139,7 @@
               </label>
             </p>
 
-            <p class="result">BMI:</p>
+            <p class="result"></p>
           </form>
           <p class="btns">
             <button type="submit" class="submitButton">Submit</button>
